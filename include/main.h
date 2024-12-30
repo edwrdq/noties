@@ -4,3 +4,9 @@
 #include <QApplication>
 #include <QMainWindow>
 #include "ui_mainwindow.h"
+#include "json\single_include\nlohmann\json.hpp"
+#include <iostream>
+#include <thread>
+#include <string>
+#include <ctsdlib>
+#include <fstream>
