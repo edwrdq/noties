@@ -1,30 +1,22 @@
 #include "main.h"
 
-bool checkFlag() {
-    std::ifstream flagFile("flag.txt")
-    bool flag = false;
+void runNodeScript(const std::string& filePath) {
+    
+    std::string command = "node index.js" + filePath;
 
-    if (flagFile.is_open()) {
-        std::string value;
-        flagFile >> value;
-        flagFile.close();
+    int result = std::system(command.c_str());
+
+    if (result == 0) {
+        std::cout << "node.js executed succesfully" << std::endl;
+    } else {
+        std::cerr << "node.js error executing" << std::endl;
     }
-
-    if (value == "true") {
-        flag = true;
-    } else if (value == false) {
-        flag = false;
-    }
-
-    return flag;
 }
 
-void notifyNode() {
-    std::cout << "NOTIFY_NODE" << std::endl;   
-}
+
 
 int main() {
-    std::string input;
+    std::string noteFilePath = "filepath"
     int charCount = 0;
     int cycleCount = 0;
     auto startTime = std::chrono::system_clock::now();
