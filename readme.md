@@ -13,12 +13,11 @@
   - Autosave: When using cloud syncing, notes are automatically saved to the cloud periodically
   - Cross-Platform: works on multiple platforms with a sleek UI built using QT and C++
 
-### Contributing
+### Contributing + Resources for contributing
   Noties is a work in process, so any help is appreciated! We're still in early development, so there's no installation instructions. 
 
   [Github guide on contributing to a repo](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project)
 
-  File of our priorities in development will soon be available!
-    
+  [Priorities chart](https://github.com/users/edwrdq/projects/1/views/1)
 
 
